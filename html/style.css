@@ -6,8 +6,13 @@ body {
     padding:0px;
     background-color: white;
     font-family:나눔고딕;
-    overflow:hidden;
+    -ms-overflow-style: none;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+
+
 a {
     color:#111111;
     text-decoration:none
@@ -51,7 +56,7 @@ a {
 }
 .tit{
   padding: 22px;
-  margin-left: 40px;
+  text-align: center;
   height: 50px;
 }
 .m1{
@@ -74,6 +79,29 @@ a {
   margin-right:-120px;
   width:960px;
   height:1200px;
+  display: table-cell;
+}
+table.suite {
+    width: 800px;
+    border-collapse: separate;
+    border-spacing: 1px;
+    text-align: middle;
+    line-height: 1.5;
+    border-top: 1px solid #D4C1A1;
+    margin : 20px 10px;
+}
+table.suite th {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: middle;
+    border-bottom: 1px solid #D4C1A1;
+}
+table.suite td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #D4C1A1;
 }
 .finish {
    clear: both;
